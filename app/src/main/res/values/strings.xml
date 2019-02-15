@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <string-array name="oses">
+        <item>Android</item>
+        <item>iPhone</item>
+        <item>Max OS X</item>
+    </string-array>
+</resources>

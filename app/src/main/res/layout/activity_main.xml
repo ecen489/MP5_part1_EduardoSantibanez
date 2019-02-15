@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="3 Track Media Player"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/song1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="playsong1"
+            android:text="Yo Te Busco" />
+
+        <RadioButton
+            android:id="@+id/song2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playsong2"
+            android:text="Mi Universo" />
+
+        <RadioButton
+            android:id="@+id/song3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playsong3"
+            android:text="Cautivado" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/musicimg"
+        android:layout_width="match_parent"
+        android:layout_height="280dp" />
+
+    <ImageButton
+        android:id="@+id/playback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:background="@drawable/playpause"
+        android:onClick="control"/>
+
+
+</LinearLayout>
